@@ -83,6 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
           </svg>
           Download TXT
         </button>
+        <button class="download-btn" data-format="mobi">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Download MOBI
+        </button>
       `;
 
       bookCard.appendChild(menu);
@@ -105,6 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
               window.location.href = 'https://github.com/Gcuore/libri/raw/refs/heads/main/Harry%20Potter%20e%20il%20Prigioniero%20di%20Azkaban%203%20(J.K.%20Rowling)%20(Z-Library).pdf';
             } else if (format === 'txt') {
               window.location.href = 'https://github.com/Gcuore/libri/raw/refs/heads/main/Harry%20Potter%20e%20il%20Prigioniero%20di%20Azkaban%203%20(J.K.%20Rowling)%20(Z-Library).txt';
+            } else if (format === 'mobi') {
+              window.location.href = 'https://github.com/Gcuore/libri/raw/refs/heads/main/Harry%20Potter%20e%20il%20Prigioniero%20di%20Azkaban%203%20(J.K.%20Rowling)%20(Z-Library).mobi';
             }
           } else {
             alert(`Download iniziato per ${bookTitle} in formato ${format.toUpperCase()}`);

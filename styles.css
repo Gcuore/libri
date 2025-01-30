@@ -331,6 +331,7 @@ footer {
   z-index: 1000;
   transform: translateY(10px);
   transition: all 0.3s ease;
+  min-width: 200px;
 }
 
 .download-menu.active {
